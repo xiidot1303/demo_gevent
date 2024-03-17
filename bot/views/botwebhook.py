@@ -31,7 +31,7 @@ def demo(request):
     # start = datetime.now().strftime("%H:%M:%S")
     # await asyncio.sleep(5)
     # await asyncio.sleep(5)
-    # sleep(4)
+    sleep(4)
     # end = datetime.now().strftime("%H:%M:%S:%f")
     # return HttpResponse(f'{start} - {end}')
     return HttpResponse('OK')
