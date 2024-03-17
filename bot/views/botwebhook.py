@@ -36,7 +36,10 @@ def demo(request):
     # return HttpResponse(f'{start} - {end}')
     return HttpResponse('OK')
 
-
+def check_db(request):
+    count = Test.objects.count()
+    Test.objects.all().delete()
+    return HttpResponse(count)
 
 # loop = asyncio.new_event_loop()
 # asyncio.set_event_loop(loop)
